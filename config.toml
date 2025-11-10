@@ -1,4 +1,4 @@
-baseURL = "https://workshop-sample.fcjuni.com/"
+baseURL = "https://paperkite-master.github.io/AWS_FCJ/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
