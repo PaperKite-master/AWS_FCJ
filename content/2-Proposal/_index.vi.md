@@ -16,7 +16,8 @@ Một cửa hàng bán quần áo đang cần một kênh thương mại điện
 Tạo một trang wed bán hàng riêng cho cửa hàng, sử dụng các dịch vụ aws để tối ưu hóa chi phí, thời gian và trải nghiệm người dùng.
 ## 3.Kiến trúc giải pháp
 Nền tảng áp dụng kiến trúc AWS Serverless đẻ quản lý đữ liệu
-![](/images/2-Proposal/AWS1.drawio.png)
+![](https://paperkite-master.github.io/AWS_FCJ/images/2-Proposal/AWS1.drawio.png
+)
 
 ### Các Lớp Thành Phần Và Vai Trò Trong Kiến Trúc AWS 
 

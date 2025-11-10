@@ -20,7 +20,8 @@ Create a dedicated e-commerce website for the store using AWS services to optimi
 
 ## 3. Solution Architecture
 The platform applies an **AWS Serverless architecture** to manage data.  
-![](/images/2-Proposal/AWS1.drawio.png)
+![](https://paperkite-master.github.io/AWS_FCJ/images/2-Proposal/AWS1.drawio.png
+)
 
 ### Components and Roles in the AWS Architecture
 
