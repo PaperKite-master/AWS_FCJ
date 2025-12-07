@@ -1,7 +1,7 @@
 ---
 title : "Chuẩn bị s3"
 date: 2025-09-09
-weight : 6
+weight : 7
 chapter : false
 pre : " <b> 5.7. </b> "
 ---
