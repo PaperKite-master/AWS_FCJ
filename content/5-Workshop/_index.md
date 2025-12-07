@@ -5,27 +5,62 @@ weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+## Overview
+Amazon Bedrock provides the ability to integrate leading foundation models (LLMs) from Anthropic, Meta, AI21 Labs, and other providers through a simple API, allowing you to build AI applications without managing complex infrastructure.
 
-#### Overview
+In this workshop, we will learn how to build, deploy, and test a complete AI Chatbot using a serverless architecture, enabling users to interact with Claude Haiku 4.5 without having to manage servers or worry about scaling.
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+We will create a system with **five main components** to build the chatbot: Amazon Bedrock (AI engine), AWS Lambda (backend logic), API Gateway (REST API endpoint), Amazon S3 (frontend hosting), and CloudWatch (monitoring). These components deliver a fully serverless architecture with low cost and automatic scaling.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+##### Main Components:
+**Amazon Bedrock (AI Engine)** – Provides the Claude Haiku 4.5 model through a simple API. You call the InvokeModel API to send messages and receive intelligent AI responses.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+**AWS Lambda (Backend Logic)** – Runs Node.js 24 code to process requests from API Gateway. Lambda validates input (message length, history limits), formats prompts for Bedrock, calls the Bedrock API, and handles errors.
 
-#### Content
+**API Gateway (REST API Endpoint)** – Creates a public HTTPS endpoint (POST /chat) for the frontend to call. API Gateway handles CORS configuration, routes requests to Lambda, and provides throttling to protect the backend from abuse.
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+**Amazon S3 (Frontend Hosting)** – Hosts a static website (HTML) for the chatbot UI. Users access the chatbot through the browser; the interface sends messages to API Gateway and displays AI responses.
+
+**CloudWatch (Monitoring & Debugging)** – Automatically collects logs from Lambda execution, allowing you to debug errors.
+
+### Architecture Overview
+User Browser → S3 (Static Website) → API Gateway → Lambda → Bedrock (Claude) → CloudWatch
+
+Flow:
+
+- User enters a message in the chatbot UI (hosted on S3)
+- JavaScript sends a POST request to the API Gateway endpoint
+- API Gateway invokes the Lambda function
+- Lambda validates input, formats the prompt, and calls the Bedrock InvokeModel API
+- Bedrock processes it with Claude Haiku 4.5 and returns the AI response
+- Lambda returns the response back to API Gateway → Browser  
+- CloudWatch logs the entire process
+
+## Workshop Modules
+[**Module 1**: Setup Amazon Bedrock](5.3-Setup-Amazon-Bedrock/)  
+• Enable Claude Haiku 4.5 model access  
+• Understand inference profiles  
+• Test the model via AWS Console  
+
+[**Module 2**: Create Lambda Function](5.4-Setup_Lambda/)  
+• Create a Node.js 24 Lambda function  
+• Deploy chatbot backend code  
+• Configure IAM role with Bedrock permissions  
+• Set environment variables  
+
+[**Module 3**: Configure API Gateway](5.5-Setup-API-gateway/)  
+• Create REST API  
+• Configure POST /chat endpoint  
+• Enable CORS  
+• Test API with Postman  
+
+[**Module 4**: Deploy Frontend to S3](5.7-Setup-S3/)  
+• Create S3 bucket  
+• Enable static website hosting  
+• Upload HTML chatbot UI  
+• Configure public access  
+
+[**Module 5**: Testing & Debugging](5.6-Monitoring-CloudWatch/)  
+• Test end-to-end flow  
+• View CloudWatch logs  
