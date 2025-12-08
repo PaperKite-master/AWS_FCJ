@@ -7,13 +7,13 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Nguyễn Tuấn Kiệt
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0946116813
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** kietntse182120@fpt.edu.vn
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **Trường:** Đại học FPT
 
 &emsp; **Ngành:** Công nghệ thông tin
 
@@ -23,9 +23,9 @@ chapter: false
 
 &emsp; **Vị trí thực tập:** FCJ Cloud Intern
 
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
+&emsp; **Thời gian thực tập:** Từ ngày 08/09/2025 đến ngày 28/11/2025
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+![Ảnh đại diện của bạn](https://paperkite-master.github.io/AWS_FCJ/images/image.png)
 
 
 
