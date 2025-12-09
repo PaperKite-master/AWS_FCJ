@@ -32,13 +32,17 @@ During my internship, I participated in two events. Each one was a memorable exp
 
 &emsp;**Role:** Attendee  
 
+&emsp;**Description:** This workshop focused on modernizing applications and databases using GenAI. Key topics included Domain-Driven Design (DDD), event-driven architecture, microservices migration, compute evolution (EC2 to Lambda), and Amazon Q Developer for SDLC automation. The event provided hands-on experience with event storming techniques, integration patterns (pub/sub, point-to-point, streaming), and best practices for application modernization with a phased approach and ROI measurement.
+
 ---
 
 ### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+&emsp;**Event Name:** AWS Cloud Day Vietnam 2025 – AI Edition  
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Date & Time:** September 18, 2025  
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Location:** Ho Chi Minh City, Vietnam  
 
 &emsp;**Role:** Attendee  
+
+&emsp;**Description:** The theme "New Age Vietnam: From Vision to Value" focused on transforming AI vision into measurable value. The event covered Generative AI on AWS, including Amazon Bedrock, Amazon Q, RAG architectures, agentic workflows, data pipelines, and guardrails. Key sessions addressed GenAI foundations, data security & governance, app modernization for AI, and hands-on builder workshops. The event emphasized a data-first approach, cost optimization, observability, and a clear roadmap from PoC to pilot to scale.  
