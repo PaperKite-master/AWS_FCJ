@@ -5,122 +5,51 @@ weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+# Creative coding for everyone: Pi Jam expands digital skills for underserved learners in India with AWS
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+by Mohammed Reda and Aanya Niaz, 01 OCT 2025 – categories: [Customer Solutions](https://aws.amazon.com/blogs/publicsector/category/post-types/customer-solutions/), [EdTechs](https://aws.amazon.com/blogs/publicsector/category/public-sector/education/edtechs/), [Education](https://aws.amazon.com/blogs/publicsector/category/public-sector/education/), [Public Sector](https://aws.amazon.com/blogs/publicsector/category/public-sector/) | [Permalink](https://aws.amazon.com/blogs/publicsector/creative-coding-for-everyone-how-pi-jam-expands-digital-skills-for-underserved-learners-in-india-with-aws/) | [Share](https://aws.amazon.com/blogs/publicsector/creative-coding-for-everyone-how-pi-jam-expands-digital-skills-for-underserved-learners-in-india-with-aws/)
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+India’s National Education Policy 2020 (NEP 2020 – [National Education Policy 2020](https://www.education.gov.in/en/nep/about-nep)) calls for technology to play a central role in equitable, high-quality education, emphasizing “online and digital education: ensuring equitable use of technology.” Yet reliable connectivity and devices remain out of reach for many students, especially in rural and public schools:
 
----
+- According to the UDISE+ 2023–24 report ([Unified District Information System for Education Plus](https://dashboard.udiseplus.gov.in/#/)), only 53.9% of Indian schools have internet connectivity and 57.2% have computers.  
+- At the household level, 67.6% of children live in homes with a smartphone, but 26.1% still cannot access the device even when it exists, per the [Annual Status of Education Report](https://img.asercentre.org/graphics/householdmajorfindings2.pdf).
 
-## Architecture Guidance
+These gaps limit millions of students from reaching creative computing skills and problem-solving as outlined by NEP 2020. This is where the [Pi Jam Foundation](https://www.thepijam.org/) — a nonprofit committed to bringing creative coding and digital skills to underserved students using [Amazon Web Services](https://aws.amazon.com/) (AWS) — steps in to bridge the digital divide.
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+## Pi Jam Foundation and Code Mitra: Cloud-native from day one
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+Pi Jam Foundation built [Code Mitra](https://www.codemitra.org/landing), a modular open platform that delivers creative coding to students and teachers across India. The platform uses block-based programming ([block-based programming](https://subjectguides.york.ac.uk/coding/scratch)) to build 21st-century skills like logic, problem-solving, and collaboration. Projects are localized, from water conservation models in Kashmir to traffic optimization in Maharashtra.
 
-**The solution architecture is now as follows:**
+The platform integrates with national LMSs such as [DIKSHA](https://diksha.gov.in/index.html). Designed for low-resource environments, Code Mitra runs on low-cost Android phones and supports offline use; teachers have built-in professional development tools and can co-create local content.
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+From the start, Code Mitra runs fully on AWS for reliability and scalability, leveraging [AWS Lambda](https://aws.amazon.com/pm/lambda/), [Amazon Aurora](https://aws.amazon.com/rds/aurora/), [Amazon S3](https://aws.amazon.com/s3/), [Amazon CloudFront](https://aws.amazon.com/cloudfront/), [Amazon API Gateway](https://aws.amazon.com/api-gateway/), [Amazon ElastiCache](https://aws.amazon.com/elasticache/), and other managed services. Pi Jam also uses [Amazon Bedrock](https://aws.amazon.com/bedrock/) to score ideas for large student hackathons and extend AI for [Scratch](https://scratch.mit.edu/about), enabling students to experiment with AI in a visual creative-coding environment.
 
----
+## Impact at national scale
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+Since launch, Code Mitra has reached 1.14 million students across 95% of India’s districts. Seventy-six percent of learners access lessons on low-cost devices; context-based activities achieve 58% completion, with 30% of students submitting original ideas. Over 11,000 teachers across 14 districts have been trained; 71% say activities are easy to localize and 84% report higher classroom engagement.
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+On the technology side, Pi Jam reports a 30% improvement in API response times after modernizing the platform with AWS managed services, delivering smoother experiences even in low-bandwidth settings.
 
----
+## Support from the Education Equity Initiative
 
-## Technology Choices and Communication Scope
+The [AWS Education Equity Initiative](https://aws.amazon.com/about-aws/our-impact/education-equity-initiative/) (EEI) provides promotional credits that help Pi Jam expand quickly in underserved regions. This support enabled India’s largest student hackathon – the [Eco Creativity and Innovation Hackathon](https://www.codemitra.org/competition/5) with over 700,000 participants and 200,000 ideas – and funded state-level learning portals such as the Code Mitra variant for Telangana. These efforts let public-school students and teachers across the state access structured creative-coding pathways and localized resources, demonstrating EEI’s sustainable impact.
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+## Future plans
 
----
+Pi Jam aims to reach another 1 million students by 03/2026 and 7 million by 03/2028, prioritizing rural and public schools. Planned features include AI-driven personalized learning paths and a content recommendation system.
 
-## The Pub/Sub Hub
+## Conclusion
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+Pi Jam Foundation shows how a cloud-native approach on AWS can scale creative coding for learners at risk of being left behind. With ongoing support from the AWS Education Equity Initiative, the organization is poised to reach millions more students and introduce AI-powered personalization, ensuring every child — regardless of device or connectivity — gains the skills to thrive in a digital future.
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+Explore how your education program can use the cloud to expand access and improve learning outcomes at the [AWS Education page](https://aws.amazon.com/education/).
 
----
+TAGS: [Amazon Aurora](https://aws.amazon.com/blogs/publicsector/tag/amazon-aurora/), [Amazon CloudFront](https://aws.amazon.com/blogs/publicsector/tag/amazon-cloudfront/), [Amazon S3](https://aws.amazon.com/blogs/publicsector/tag/amazon-s3/), [AWS Lambda](https://aws.amazon.com/blogs/publicsector/tag/aws-lambda/), [AWS Public Sector](https://aws.amazon.com/blogs/publicsector/tag/aws-public-sector/), [customer story](https://aws.amazon.com/blogs/publicsector/tag/customer-story/), [EdTech](https://aws.amazon.com/blogs/publicsector/tag/edtech/), [education](https://aws.amazon.com/blogs/publicsector/tag/education/)
 
-## Core Microservice
+**Mohammed Reda**  
+Senior solutions architect at AWS. He helps schools, universities, and EdTech companies in the UK adopt cloud technologies, improve education services, and innovate on AWS.
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+**Aanya Niaz**  
+Global education equity lead at AWS, focused on expanding access to cloud technology to help organizations build innovative learning solutions, especially for underserved students.
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
-
----
-
-## Front Door Microservice
-
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
-
----
-
-## Staging ER7 Microservice
-
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
-
----
-
-## New Features in the Solution
-
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
