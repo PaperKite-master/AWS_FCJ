@@ -1,59 +1,41 @@
 ---
 title: "Worklog Tuần 8"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 8:
+### Mục tiêu Tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Học bài và học lý thuyết để thi giữa kì.
+* Thi giữa kỳ.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ cần thực hiện trong tuần:
+| Ngày | Nhiệm vụ                                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2   | - Đến văn phòng để học. <br> - Học/ôn cùng mentor để chuẩn bị cho kỳ thi giữa kỳ.                                                                                                   | 27/10/2025 | 31/10/2025      | <https://skillbuilder.aws/> |
+| 3   | - Ôn bài bằng các bộ câu hỏi trên Quizlet. <br> - Học sâu lý thuyết Solution Architect.                                                                                                   | 27/10/2025 | 31/10/2025     | <https://quizlet.com/340744042/aws-flash-cards/?funnelUUID=62f88ee4-b28f-4699-b909-a959d8bd4efd> |
+| 4   | - Xem đề mẫu và đoạn code của kỳ thi SAA. <br> - Dùng AI chat để tạo câu hỏi tự học và chọn đáp án như khi thi thật.                                                                                                  | 27/10/2025 | 31/10/2025      | <https://ezse.net/aws/certified-cloud-practitioner/cau-hoi-co-ban.html> |
+| 5   | - Học lý thuyết và ứng dụng AWS cho các giải pháp. <br> - Rà soát lý thuyết để xác định ứng dụng AWS phù hợp cho tiết kiệm chi phí, điều kiện rủi ro,…..                                                                                                   | 27/10/2025 | 31/10/2025      | <https://skillbuilder.aws/> |
+| 6   | - Thi giữa kỳ.                                                                                               | 31/10/2025 | 31/10/2025      
 
 
-### Kết quả đạt được tuần 8:
+### Thành tựu Tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Đến văn phòng học và ôn với mentor để chuẩn bị cho kỳ thi giữa kỳ.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Ôn luyện với các bộ câu hỏi trên Quizlet.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Học sâu lý thuyết Solution Architect.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Xem đề mẫu/đoạn code của SAA; dùng AI tạo câu hỏi tự luyện và chọn đáp án như thi thật.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
+* Học lý thuyết & ứng dụng AWS cho các giải pháp; rà soát lựa chọn phù hợp để tiết kiệm chi phí và xử lý tình huống rủi ro.
+
+
+* Thi giữa kỳ (31/10/2025).
 * ...
-
-

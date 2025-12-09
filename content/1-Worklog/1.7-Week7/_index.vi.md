@@ -1,59 +1,42 @@
 ---
 title: "Worklog Tuần 7"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Mục tiêu Tuần 7:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+* Draw, design and plan your studies.
+* Ôn tập chuẩn bị cho kì thi giữ kỳ.
+
+### Các nhiệm vụ cần thực hiện trong tuần:
+| Ngày | Nhiệm vụ                                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo                        |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
+| 2   | - Tiếp tục vẽ và lập kế hoạch để chuẩn bị tư vấn thiết kế hộp chat AI cho trang chủ. <br> - Tìm hiểu Powered by AWS Bedrock AI và cách chuẩn bị nó cho dự án của bạn trên trang chủ.                                                                                                   | 20/10/2025 | 20/10/2025       |<https://aws.amazon.com/vi/bedrock/?trk=58fd0fb1-df1c-4e26-b990-06d09d890997&sc_channel=ps&ef_id=Cj0KCQjwsPzHBhDCARIsALlWNG0lISmbTGhdjL825lNO1w-a8ez9OXwlmCc5XsSTNZGIDtgVpchCUtgaAvkOEALw_wcB:G:s&s_kwcid=AL!4422!3!692062112144!p!!g!!bedrock!21054970946!157173566857&gad_campaignid=21054970946&gbraid=0AAAAADjHtp8Si2C_9mrOH-lEBa26rs-CT&gclid=Cj0KCQjwsPzHBhDCARIsALlWNG0lISmbTGhdjL825lNO1w-a8ez9OXwlmCc5XsSTNZGIDtgVpchCUtgaAvkOEALw_wcB> |
+| 3   | - Quyết định sử dụng hạ tầng chat được vận hành bởi AWS Bedrock AI. <br>- Viết code và debug để đảm bảo hộp chat hoạt động mượt mà.| 21/10/2025 | 23/10/2025      |  <https://aws.amazon.com/vi/bedrock/?trk=58fd0fb1-df1c-4e26-b990-06d09d890997&sc_channel=ps&ef_id=Cj0KCQjwsPzHBhDCARIsALlWNG0lISmbTGhdjL825lNO1w-a8ez9OXwlmCc5XsSTNZGIDtgVpchCUtgaAvkOEALw_wcB:G:s&s_kwcid=AL!4422!3!692062112144!p!!g!!bedrock!21054970946!157173566857&gad_campaignid=21054970946&gbraid=0AAAAADjHtp8Si2C_9mrOH-lEBa26rs-CT&gclid=Cj0KCQjwsPzHBhDCARIsALlWNG0lISmbTGhdjL825lNO1w-a8ez9OXwlmCc5XsSTNZGIDtgVpchCUtgaAvkOEALw_wcB> |> |
+| 4   | - Sau khi code, với sự hỗ trợ của AI, phần hộp chat cơ bản có thể hoàn thành. <br> - Hoàn thiện thiết kế giao diện và thảo luận với BE để tiếp tục xử lý phần bên trong của hộp chat. | 21/10/2025 | 23/10/2025      | <https://aws.amazon.com/vi/bedrock/?trk=58fd0fb1-df1c-4e26-b990-06d09d890997&sc_channel=ps&ef_id=Cj0KCQjwsPzHBhDCARIsALlWNG0lISmbTGhdjL825lNO1w-a8ez9OXwlmCc5XsSTNZGIDtgVpchCUtgaAvkOEALw_wcB:G:s&s_kwcid=AL!4422!3!692062112144!p!!g!!bedrock!21054970946!157173566857&gad_campaignid=21054970946&gbraid=0AAAAADjHtp8Si2C_9mrOH-lEBa26rs-CT&gclid=Cj0KCQjwsPzHBhDCARIsALlWNG0lISmbTGhdjL825lNO1w-a8ez9OXwlmCc5XsSTNZGIDtgVpchCUtgaAvkOEALw_wcB> |
+| 5   | -BE đang phân công và chờ các nhiệm vụ được giao. <br> - Chốt cấu trúc ban đầu của giao diện và các thành viên trong nhóm đang kiểm thử tính năng để tìm lỗi. | 21/10/2025 | 23/10/2025      | <https://aws.amazon.com/vi/bedrock/?trk=58fd0fb1-df1c-4e26-b990-06d09d890997&sc_channel=ps&ef_id=Cj0KCQjwsPzHBhDCARIsALlWNG0lISmbTGhdjL825lNO1w-a8ez9OXwlmCc5XsSTNZGIDtgVpchCUtgaAvkOEALw_wcB:G:s&s_kwcid=AL!4422!3!692062112144!p!!g!!bedrock!21054970946!157173566857&gad_campaignid=21054970946&gbraid=0AAAAADjHtp8Si2C_9mrOH-lEBa26rs-CT&gclid=Cj0KCQjwsPzHBhDCARIsALlWNG0lISmbTGhdjL825lNO1w-a8ez9OXwlmCc5XsSTNZGIDtgVpchCUtgaAvkOEALw_wcB> |
+| 6   | - Ôn thi giữa kỳ, làm lại các bài lab để có thể áp dụng các định nghĩa, học lý thuyết có thể ra trong giữa kỳ. <br> - Chốt cấu trúc ban đầu của giao diện và các thành viên trong nhóm đang kiểm thử tính năng để tìm lỗi. | 21/10/2025 | 23/10/2025      | <https://skillbuilder.aws/> |
 
 
-### Kết quả đạt được tuần 7:
+### Thành tựu Tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Phác thảo và lập kế hoạch tư vấn thiết kế hộp chat AI cho trang chủ.
+  
+* Nghiên cứu “Powered by AWS Bedrock AI” và chuẩn bị tích hợp cho dự án trên trang chủ.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Quyết định áp dụng hạ tầng chat được vận hành bởi AWS Bedrock AI.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Triển khai và debug hộp chat để đảm bảo hoạt động mượt mà.
+  
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Cơ bản hoàn thành hộp chat với sự hỗ trợ của AI; hoàn thiện UI và thống nhất với BE về logic bên trong.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+ 
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
+* BE phân công nhiệm vụ; chốt cấu trúc UI ban đầu, nhóm kiểm thử tính năng để tìm lỗi; ôn giữa kỳ và làm lại các bài lab.
 * ...
-
-

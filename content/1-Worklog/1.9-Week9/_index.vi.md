@@ -1,59 +1,44 @@
 ---
 title: "Worklog Tuần 9"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Cài đặt môi trường chạy song song để thiết kế được project.
+* Hoàn thành việc gắn api Quản lí sản phẩm và Phân loại.
 
-### Các công việc cần triển khai trong tuần này:
+### Các nhiệm vụ cần thực hiện trong tuần:
+
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Gắn api của backend và test swager trước khi đưa api vào fontend. <br> - Kiểm tra các Login để có thể thêm quyền admin.                                                                                            | 03/11/2025   | 09/11/2025      |   <http://localhost:8080/swagger-ui/index.html?gidzl=Un-z6C7ELdHx1huVmjDLSde1l1xRqL1wPbRiGjxKLtfc0EyGqOG4AMm1kKJItmKiFrplGZUFvjbSnyrKSW&continue=#/product-variant-controller/listProductVariants> |
+| 3   | - Thiết kế Phân loại và Quản lí sản phẩm cho admin <br> - Gắng api Quản lí sản phẩm và Phân loại. <br> - Có vấn đề về backend khi chưa cày và chạy backend và Docker.                                            | 03/11/2025   | 09/11/2025      | <http://localhost:8080/swagger-ui/index.html?gidzl=Un-z6C7ELdHx1huVmjDLSde1l1xRqL1wPbRiGjxKLtfc0EyGqOG4AMm1kKJItmKiFrplGZUFvjbSnyrKSW&continue=#/product-variant-controller/listProductVariants> |
+| 4   | - Cài môi trường và liên kết git backend và chạy song song giữa backend, Docker, fondend. <br> - Thêm api và chekc kiểm tra xem có hoạt động không.  | 03/11/2025   | 09/11/2025       | <http://localhost:8080/swagger-ui/index.html?gidzl=Un-z6C7ELdHx1huVmjDLSde1l1xRqL1wPbRiGjxKLtfc0EyGqOG4AMm1kKJItmKiFrplGZUFvjbSnyrKSW&continue=#/product-variant-controller/listProductVariants> |
+| 5   | - Hoàn thành việc gáng api của cả 2 nhưng vấn để xuất hiện bên trong làm sao để lấy ảnh từ S3 và lưu ảnh để hiển thị lên web. <br> - Học tìm hiểu và lấy link S3Key để đưa vào hiển thị. <br> - TÌm cách để có thể thêm, sửa, xóa hình ảnh hiển thị thông qua danh mục sản phẩm bằng liên kết api.              | 03/11/2025   | 09/11/2025      | <http://localhost:8080/swagger-ui/index.html?gidzl=Un-z6C7ELdHx1huVmjDLSde1l1xRqL1wPbRiGjxKLtfc0EyGqOG4AMm1kKJItmKiFrplGZUFvjbSnyrKSW&continue=#/product-variant-controller/listProductVariants> |
+| 6   | - Hoàn thiện được việc thêm, sửa, xóa sản phẩm và hiển thị sản phẩm trong phần quản lí sản phẩm của project.                                                                      | 03/11/2025   | 09/11/2025      | <http://localhost:8080/swagger-ui/index.html?gidzl=Un-z6C7ELdHx1huVmjDLSde1l1xRqL1wPbRiGjxKLtfc0EyGqOG4AMm1kKJItmKiFrplGZUFvjbSnyrKSW&continue=#/product-variant-controller/listProductVariants> |
 
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
+* **Thiết lập môi trường phát triển đồng bộ:**
+  * Đã cài đặt và cấu hình thành công môi trường chạy song song giữa Backend, Docker và Frontend.
+  * Hoàn tất việc liên kết Git cho Backend, đảm bảo mã nguồn được đồng bộ.
+
+* **Tích hợp API và Phân quyền:**
+  * Hiểu và sử dụng thành thạo Swagger để kiểm thử API trước khi tích hợp vào Frontend.
+  * Xử lý thành công luồng Đăng nhập và phân quyền cho tài khoản Admin.
+
+* **Hoàn thiện Module Quản lý Sản phẩm:**
+  * Hoàn thành thiết kế UI cho trang Quản lý sản phẩm và Phân loại.
+  * Tích hợp thành công API cho đầy đủ các chức năng CRUD (Thêm, Sửa, Xóa, Xem) đối với sản phẩm.
+
+* **Giải quyết bài toán lưu trữ hình ảnh với AWS S3:**
+  * Nắm được cơ chế lưu trữ đối tượng trên S3.
+  * Đã xử lý được vấn đề logic về việc lấy S3 Key từ Backend và hiển thị hình ảnh sản phẩm lên giao diện Frontend.
   * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-

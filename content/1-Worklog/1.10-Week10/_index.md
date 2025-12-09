@@ -1,13 +1,11 @@
 ---
 title: "Week 10 Worklog"
-date: 2025-09-09
+date: ""
 weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 10 Objectives:
@@ -16,42 +14,40 @@ pre: " <b> 1.10. </b> "
 * Understand basic AWS services, how to use the console & CLI.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                            |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | --------------------------------------------- |
+| 2   | - Attach APIs piece by piece to the frontend and use F12 (DevTools) to check, remove, and minimize minor bugs. <br> - Hold a meeting to choose a time for an offline session.         | 10/11/2025 | 16/11/2025      | <http://localhost:3001/> |
+| 3   | - Meet offline at a café to discuss the project more clearly and support the BE to add necessary features.  <br> - Continue focusing on the project and complete the remaining APIs.   | 10/11/2025 | 16/11/2025      | <http://localhost:3001/> |
+| 4   | - Add warehouse (inventory) and Customer Access List.  <br> - Attach APIs to link categories and product management to the warehouse. <br> - After linking, the ADMIN section is done. | 10/11/2025 | 16/11/2025      | <http://localhost:3001/> |
+| 5   | - Continue attaching APIs from the backend and test the functionalities.                                                                         | 10/11/2025 | 16/11/2025      | <http://localhost:3001/> |
+| 6   | - Practice the workshop and write the worklog and prepare the worklog and workshop. <br>&emsp; + Create an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume | 10/11/2025 | 16/11/2025      | <http://localhost:3001/> |
 
 
-### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Week 10 Results:
 
-* Successfully created and configured an AWS Free Tier account.
+* Completed API integration into frontend: 
+  * Attached APIs module by module, tested using DevTools (F12).
+  * Eliminated/significantly reduced minor bugs.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Organization & work coordination:
+  * Agreed on offline meeting schedule.
+  * Clarified project roadmap for upcoming milestones.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Backend support & API completion:
+  * Collaborated with BE to add necessary features.
+  * Continued completing remaining APIs.
 
-* Used AWS CLI to perform basic operations such as:
+* Data expansion & administration:
+  * Added warehouse (inventory) and customer access list.
+  * Linked categories & product management to warehouse.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+* ADMIN section completion & testing:
+  * Completed ADMIN module after data linking.
+  * Continued end-to-end functionality testing.
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* Infrastructure workshop:
+  * Created EC2 instance, SSH connection, attached EBS volume.
+  * Completed and updated worklog.
 * ...

@@ -1,59 +1,33 @@
 ---
 title: "Worklog Tuần 3"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Chinh phục Amazon EC2: Hiểu cách khởi tạo máy chủ ảo, lựa chọn cấu hình (Instance types) và quản lý ổ cứng (EBS).
+- Làm chủ Amazon VPC: Hiểu cách thiết kế mạng ảo, chia subnet và kiểm soát luồng truy cập.
+- Kết nối hạ tầng: Thực hành kết nối Web Server (EC2) với Database (RDS) đã tạo ở tuần 2.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                                                                                                                                                             |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | - Lý thuyết Compute & Storage (Block): <br> - Đọc về Amazon EC2: Các loại Instance (T, M, C...), vòng đời (Lifecycle). <br> - Tìm hiểu Amazon EBS: Các loại volume (GP3, IO2...), cách mount ổ cứng vào EC2. <br> - Tìm hiểu về AMI (Amazon Machine Image).                                                                                                                                                                                                                                                                                                                                                                      | 23/09/2025   | 23/09/2025      | <https://explore.skillbuilder.aws/learn>                                                                                                                                                                                                                                   |
+| 3   | - Hoàn thành lab và hiểu mục tiêu của Lab EC2: <br> - <strong>Thực hành:</strong> <br>  + Tạo Key Pair và Security Group <br>  + Khởi tạo (Launch) một EC2 Instance <br>  + SSH vào server và cài đặt Web Server <br>  + &hellip;                                                                                                                                                                                                                                                                                                                                                                                                | 24/09/2025   | 24/09/2025      | <https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1>                                                                                                                                                                                                       |
+| 4   | - Tìm hiểu lý thuyết Networking (VPC): <br> - Đọc về kiến trúc VPC: CIDR block, Subnet (Public vs Private). <br> - Tìm hiểu Internet Gateway (IGW) và Route Table. <br> - Phân biệt Security Group (Stateful) và NACL (Stateless).                                                                                                                                                                                                                                                                                                                                                                                               | 25/09/2025   | 25/09/2025      | <https://docs.aws.amazon.com/vpc/>                                                                                                                                                                                                                                         |
+| 5   | - Làm lab VPC để thiết kế mạng lưới cho hệ thống. <br> - Đọc hướng dẫn và chuẩn bị các bước để tạo Custom VPC. <br> - <strong>Thực hành:</strong> <br>  + Tạo VPC mới và chia Subnet <br>  + Gắn Internet Gateway và cấu hình Route Table <br>  + &hellip;                                                                                                                                                                                                                                                                                                                                                                       | 26/09/2025   | 26/09/2025      | <https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1>                                                                                                                                                                                                       |
+| 6   | - <strong>Thực hành Tích hợp (Integration):</strong> <br>  + Kết nối Web Server (EC2) với Database (RDS) đã tạo tuần trước <br>  + Cấu hình Security Group cho phép port 3306 <br>  + Hoàn thành mô hình 2-Tier cơ bản                                                                                                                                                                                                                                                                                                                                                                                                         | 27/09/2025   | 27/09/2025      | <https://us-east-1.console.aws.amazon.com/ec2/v2/home>                                                                                                                                                                                                                     |
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Nắm vững kiến thức nền tảng về Compute (EC2) và Networking (VPC).
+- Hoàn thành các lab tạo máy chủ ảo và thiết kế mạng lưới VPC.
+- Biết cách sử dụng Security Group để bảo mật và kiểm soát truy cập giữa các resource.
+- Hoàn thành bài toán tích hợp: Kết nối thành công giữa Web Server (EC2) và Database (RDS).
+- Xây dựng thành công mô hình kiến trúc 2-Tier cơ bản trên AWS.
+- ...

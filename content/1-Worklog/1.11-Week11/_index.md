@@ -1,57 +1,36 @@
 ---
 title: "Week 11 Worklog"
-date: 2025-09-09
+date: ""
 weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 11 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete the basic project to prepare for submission.
+* Complete workshop.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                            |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | --------------------------------------------- |
+| 2   | - Code remaining features.<br> - Demo and prepare for the meeting.                                                                                            | 17/11/2025   | 23/11/2025      | <https://github.com/khanhtm45/AWS> |
+| 3   | - Meeting and prepare documentation for backend and frontend. <br> - Allocate tasks reasonably, accelerate progress to meet project deadline and submit on time. <br>                                            | 17/11/2025   | 23/11/2025      | <https://github.com/khanhtm45/AWS> |
+| 4   | - Complete workshop with the whole team. <br> - Study and learn.  | 17/11/2025   | 23/11/2025      | <https://github.com/vanhoangkha/AWS-First-Cloud-Journey?tab=readme-ov-file> |
+| 5   | - Study and research applications, implement into the project if time permits.  | 17/11/2025   | 23/11/2025      | <https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1> |
+| 6   | - Work with the team to minimize bugs as much as possible.<br> - Check login & logout to ensure no errors occur during submission week demo.                                                                                 | 17/11/2025   | 23/11/2025      | <https://github.com/khanhtm45/AWS> |
 
 
-### Week 11 Achievements:
+### Week 11 Results:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Product Completion: Completed coding of the project's missing functions and integrated components.
 
-* Successfully created and configured an AWS Free Tier account.
+* Quality Assurance (QA): Reviewed and fixed minor bugs (bug fixing) with the team. Ensured important features such as Login & Logout worked stably, no errors occurred during the demo.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Project Documentation: Completed drafting detailed technical documents (docx) for both Backend and Frontend.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Progress Management: Had team meetings, divided work reasonably and promoted progress to ensure timely submission.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Learning Activities: Completed the Workshop with the team and learned more about extended applications/services on AWS to optimize the project.

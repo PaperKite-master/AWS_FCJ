@@ -1,59 +1,32 @@
 ---
 title: "Worklog Tuần 4"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 4:
-
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
-
+- Hoàn tất thiết kế trang chủ (Homepage UI).
+- Thiết kế sáng tạo các trang phụ trợ: Chính sách đổi trả (Policy & Returns), Vận chuyển (Shipping), FAQ.
+- Lên kế hoạch thiết kế cho danh mục sản phẩm (Product Catalog).
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                     | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| 2   | - Tiếp tục vẽ Figma và học thêm kiến thức bên ngoài. <br> - Dọn sạch framework web (sửa lỗi, clean build).                                                                                    | 29/09/2025   | 03/10/2025      | <https://www.figma.com/design/U72937c9sp4cD0O5Fcwlw0/AWS-2025?node-id=81-3129&t=mlq1HOld0udU3Bk1-0> |
+| 3   | - Đăng ký và thực tập tại văn phòng. Học và hiểu S3 để hỗ trợ Back-End xử lý dữ liệu. <br> - Học và thiết kế Figma cho phần web của ngày hôm sau.                                             | 29/09/2025   | 03/10/2025      | <https://www.figma.com/design/U72937c9sp4cD0O5Fcwlw0/AWS-2025?node-id=81-3129&t=mlq1HOld0udU3Bk1-0> |
+| 4   | - Bước đầu tạo trang Home và tối ưu Header/Footer. <br> - Thiết kế sáng tạo các mục Chính sách & Đổi trả, Vận chuyển,... để hình thành khu Hỏi đáp/FAQ cho người dùng.                        | 29/09/2025   | 03/10/2025      | <https://www.figma.com/design/U72937c9sp4cD0O5Fcwlw0/AWS-2025?node-id=81-3129&t=mlq1HOld0udU3Bk1-0> |
+| 5   | - Lên kế hoạch thiết kế web theo Figma và hoàn tất giao diện HOMEPAGE. <br> - Tìm và lưu ảnh sản phẩm để thêm vào website; thảo luận và lên kế hoạch các trang/tài khoản admin, nhân viên,... | 29/09/2025   | 03/10/2025      | <https://www.figma.com/design/U72937c9sp4cD0O5Fcwlw0/AWS-2025?node-id=81-3129&t=mlq1HOld0udU3Bk1-0> |
+| 6   | - Tiếp tục thiết kế, tạo các mục footer toàn site cho danh mục sản phẩm để đưa sản phẩm vào UI. <br> - Lập kế hoạch công việc cuối tuần và đặt mục tiêu hoàn thành.                           | 29/09/2025   | 03/10/2025      | <https://www.figma.com/design/U72937c9sp4cD0O5Fcwlw0/AWS-2025?node-id=81-3129&t=mlq1HOld0udU3Bk1-0> |
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Tiếp tục phát triển kỹ năng thiết kế: vẽ thêm trên Figma; dọn sạch và ổn định framework web.
+- Tham gia thực tập; học S3 để hỗ trợ Back-End sử dụng dữ liệu.
+- Thiết kế các mục Figma (Chính sách & Đổi trả, Vận chuyển,...) để hình thành khu Hỏi đáp/FAQ.
+- Triển khai giao diện HOMEPAGE và lên kế hoạch trang/tài khoản cho admin, nhân viên.
+- Hoàn thiện các mục footer và đưa sản phẩm vào UI; lập kế hoạch cuối tuần với mục tiêu rõ ràng.
+- ...

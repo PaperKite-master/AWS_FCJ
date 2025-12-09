@@ -1,59 +1,35 @@
 ---
 title: "Worklog Tuần 2"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Hiểu cơ bản về AWS Cloud9, S3, RDS (Đã đọc và tìm hiểu).
+- Hoàn thành Lab S3 (Thứ 3).
+- Tham gia sự kiện Cloud Day Vietnam và tìm hiểu xu hướng AI (Thứ 4).
+- Hoàn thành Lab RDS (Đã sửa lỗi và hoàn thành vào Thứ 6).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc                                                                                                                                                                                                                                                        | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                                                                                                                                                             |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | - Đọc và tìm hiểu về AWS Cloud9 (lưu ý: hiện bị đóng truy cập trong ứng dụng này). <br> - Đọc và học Amazon S3 để thực hành/làm lab. <br> - Tiếp tục đọc và học Amazon RDS để thực hành/làm lab.                                                                 | 16/09/2025   | 16/09/2025      | <https://000057.awsstudygroup.com/vi/1-introduce/>                                                                                                                                                                                                                         |
+| 3   | - Hoàn thành lab và hiểu mục tiêu của Lab S3: <br> - <strong>Thực hành:</strong> <br>  + Lưu trữ đối tượng (objects) <br>  + Tính năng quản lý dữ liệu <br>  + Quản trị và bảo mật <br>  + &hellip; <br>                                                         | 17/09/2025   | 17/09/2025      | <https://us-east-1.console.aws.amazon.com/s3/bucket/create?region=us-east-1&bucketType=general>                                                                                                                                                                            |
+| 4   | - Tham gia sự kiện Cloud Day Vietnam và học hỏi được nhiều điều (cũng là sự kiện đầu tiên tại FCJ). <br> - Tìm hiểu các xu hướng hiện tại và cách các doanh nghiệp/lãnh đạo tại Việt Nam ứng dụng AI để tự động hoá, tăng doanh thu và tối ưu quy trình.         | 18/09/2025   | 18/09/2025      | <https://vmxwvcrs.r.us-east-1.awstrack.me/L0/https:%2F%2Femail.awscloud.com%2FMTEyLVRaTS03NjYAAAGc9dyF5F1pH9rPDZl68ocGtzzZO0RNKl9nlzWVoHl19AV5GA2hLENGpcAopvy9k4xd-U4R2vg=/1/0100019956e3db6c-8f5a7a13-b84e-4b95-b82f-414391a6af17-000000/aOaA73q6gzphysKAm7ScQrPg4Fo=444> |
+| 5   | - Làm lab RDS nhưng gặp lỗi suốt ngày và chưa khắc phục được. <br> - Đọc hướng dẫn trên web và chuẩn bị các bước để luyện tập hoàn thành lab. <br> - <strong>Thực hành:</strong> <br>  + Thực hiện theo hướng dẫn <br>  + Tạo bảng theo yêu cầu <br>  + &hellip; | 19/09/2025   | 19/09/2025      | <https://us-east-1.console.aws.amazon.com/rds/home?region=us-east-1#>                                                                                                                                                                                                      |
+| 6   | - <strong>Thực hành:</strong> <br>  + Đã sửa lỗi <br>  + Tạo lại các bảng và tiếp tục hoàn thiện RDS <br>  + Hoàn thành lab RDS                                                                                                                                  | 20/09/2025   | 20/09/2025      | <https://us-east-1.console.aws.amazon.com/rds/home?region=us-east-1#>                                                                                                                                                                                                      |
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Bắt đầu học, tự nghiên cứu và làm các lab để hiểu thêm về điện toán đám mây.
+- Hoàn thành các lab theo chương trình và lịch cá nhân.
+- Làm quen với AWS Management Console, biết cách tìm, truy cập và sử dụng dịch vụ qua giao diện web.
+- Hoàn thành các lab S3 và RDS.
+- Hiểu rằng chất lượng GenAI phụ thuộc vào dữ liệu; đã thử Amazon Bedrock để gọi API mô hình lớn (không tự huấn luyện).
+- ...

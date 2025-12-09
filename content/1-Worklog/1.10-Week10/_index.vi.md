@@ -1,13 +1,11 @@
 ---
 title: "Worklog Tuần 10"
-date: 2025-09-09
+date: ""
 weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+
 
 
 ### Mục tiêu tuần 10:
@@ -15,45 +13,47 @@ pre: " <b> 1.10. </b> "
 * Kết nối, làm quen với các thành viên trong First Cloud Journey.
 * Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
 
-### Các công việc cần triển khai trong tuần này:
+### Các nhiệm vụ cần thực hiện trong tuần:
+
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Gắn api từng phần vào fontend và check kiểm tra f12 xóa và hạn chết các lỗi vặt  <br> - Họp meeting để chọn thời gian họp offline bên ngoài.                                                                                             | 10/11/2025   | 16/11/2025      |<http://localhost:3001/> |
+| 3   | - Họp offline ngoài quán để bàn bạc rõ cụ thể hơn về project và hôc trợ be để thêm các chức năng cần thiết.  <br> - Tiếp tục tập trung vào project và hoàn thành các api còn lại.                                              | 10/11/2025   | 16/11/2025      | <http://localhost:3001/> |
+| 4   | - Bổ sung kho hàng và Danh sách truy cập khách hàng.  <br> - Gáng api để liên kết danh mục và quản lí sản phẩm vào kho hàng. <br> - Sau khi liên kết là đã hoàn thành phần ADMIN. | 10/11/2025   | 16/11/2025      | <http://localhost:3001/> |
+| 5   | - Tiếp tục công việc gáng api từ backend và test các chức năng.              | 10/11/2025   | 16/11/2025      | <http://localhost:3001/> |
+| 6   | - Thực hành workshop và viết worklog và viết chuẩn bị worklog và workshop <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 10/11/2025   | 16/11/2025      | <http://localhost:3001/> |
 
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thiện tích hợp API vào frontend: 
+  * Gắn theo từng module, kiểm tra bằng DevTools (F12).
+  * Loại bỏ/giảm đáng kể các lỗi vặt.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Tổ chức & điều phối làm việc:
+  * Thống nhất lịch họp offline.
+  * Làm rõ roadmap dự án cho các mốc tiếp theo.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Hỗ trợ Backend & hoàn thiện API:
+  * Phối hợp BE bổ sung các chức năng cần thiết.
+  * Tiếp tục hoàn thiện những API còn lại.
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* Mở rộng dữ liệu & quản trị:
+  * Bổ sung kho hàng và danh sách truy cập khách hàng.
+  * Liên kết danh mục & quản lý sản phẩm với kho.
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
 
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
+* Hoàn tất phần ADMIN & kiểm thử:
+  * Hoàn thiện module ADMIN sau khi liên kết dữ liệu.
+  * Tiếp tục test chức năng end-to-end.
+ 
+
+* Workshop hạ tầng:
+  * Tạo EC2 instance, kết nối SSH, gắn EBS volume.
+  * Hoàn thành và cập nhật worklog.
 * ...
+
+
 
 

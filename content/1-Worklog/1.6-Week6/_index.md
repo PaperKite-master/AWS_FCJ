@@ -1,57 +1,40 @@
 ---
 title: "Week 6 Worklog"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Prepare lessons and study for exams.
+* Draw the structure to send to the Mentor for check.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Plan to prepare for the exam, prepare questions to study and review knowledge. <br> - Read carefully the review content that the mentors sent and stick to the exam questions.                                                                                                   | 13/10/2025 | 15/10/2025           | <https://www.notion.so/Nguy-n-Duy-Hi-u-26b17fef5a7781bf8f71e6846c27ad86> |
+| 3   | - Continue studying for the exam and take a day to review the practical knowledge and labs.                                                                                                   | 13/10/2025 | 15/10/2025           | <https://www.notion.so/Nguy-n-Duy-Hi-u-26b17fef5a7781bf8f71e6846c27ad86> |
+| 4   | - Find information and review exercises that you can use to review for your upcoming midterms. <br> - Looking for exam questions to follow and continuing the unfinished project. | 13/10/2025 | 15/10/2025           | <https://www.notion.so/Nguy-n-Duy-Hi-u-26b17fef5a7781bf8f71e6846c27ad86> |
+| 5   | - Meet and support team members on project architecture drawing to apply aws technical design to the project. <br>- Edit the drawing structure, research and the whole team works together to perfect the structure so that it can be submitted to the mentors to check if it is okay and can be applied to the project.| 16/10/2025 | 18/10/2025      | <https://skillbuilder.aws/> |
+| 6   | - But the project failed due to drawing errors. And using icons that were sleeping and other reasons that were not suitable for project management costs, so the brothers suggested that it should be removed and the aws application structure should be redrawn. <br>- Meet and re-plan to prepare for a more complete redraw of the structure.                                                                                    | 16/10/2025 | 18/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Plan, prepare questions, and stick to the review content from mentors to prepare for the exam.
 
-* Successfully created and configured an AWS Free Tier account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Continue studying for the exam and spend a day reviewing practical knowledge and labs.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Find materials and exercises for the midterm review and continue the unfinished project.
 
-* Used AWS CLI to perform basic operations such as:
+* Meet with the team, draw, and finalize the project's AWS architecture structure for mentor approval.
+ 
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* The project architecture failed due to errors and costs; the team met to plan a redraw.
+  
 * ...

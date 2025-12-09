@@ -1,57 +1,42 @@
 ---
 title: "Week 8 Worklog"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 8 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Study your lessons and theory for the midterm exam.
+* Midterm exam.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Go to the office to study. <br> - RStudy with mentors to prepare for midterm exams.                                                                                                   | 27/10/2025 | 31/10/2025      | <https://skillbuilder.aws/> |
+| 3   | - Review your lessons with quizzes on quizlet. <br> - Thorough study of solution architect theory.                                                                                                   | 27/10/2025 | 31/10/2025     | <https://quizlet.com/340744042/aws-flash-cards/?funnelUUID=62f88ee4-b28f-4699-b909-a959d8bd4efd> |
+| 4   | - View sample and code of SAA exam. <br> - Use AI chat to create self-reading questions and choose test answers like an exam.                                                                                                  | 27/10/2025 | 31/10/2025      | <https://ezse.net/aws/certified-cloud-practitioner/cau-hoi-co-ban.html> |
+| 5   | - Learn the theory and application of aws for solutions. <br> - Review the theory to see which aws applications are suitable for cost saving, dangerous conditions,.....                                                                                                   | 27/10/2025 | 31/10/2025      | <https://skillbuilder.aws/> |
+| 6   | - Midterm exam.                                                                                               | 31/10/2025 | 31/10/2025      
 
 
 ### Week 8 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Come to the office to study and review with a mentor to prepare for the midterm exam.
 
-* Successfully created and configured an AWS Free Tier account.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Review with Quizlet question sets.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Learn in-depth Solution Architect theory.
 
-* Used AWS CLI to perform basic operations such as:
+* View sample/code snippets of SAA; use AI to generate self-practice questions and choose answers like the real exam.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
+* Learn AWS theory & application for solutions; review appropriate options to save costs and handle risky situations.
+
+
+* Midterm exam (October 31, 2025).
 * ...

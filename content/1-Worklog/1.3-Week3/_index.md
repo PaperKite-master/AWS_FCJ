@@ -1,57 +1,33 @@
 ---
 title: "Week 3 Worklog"
-date: 2025-09-09
+date: ""
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Conquer Amazon EC2: Understand how to initialize virtual servers, choose configuration (Instance types) and manage hard drives (EBS).
+- Master Amazon VPC: Understand how to design virtual networks, subnet and control access flows.
+- Connect infrastructure: Practice connecting Web Server (EC2) to Database (RDS) created in week 2.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Start Date   | End Date        | Resource                                                                                                                                                                                                                                                                   |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | - Compute & Storage Theory (Block): <br> - Read about Amazon EC2: Instance types (T, M, C...), Lifecycle. <br> - Learn Amazon EBS: Volume types (GP3, IO2...), how to mount volumes to EC2. <br> - Learn about AMI (Amazon Machine Image).                                                                                                                                                                                                                                                                                                                                                                                       | 23/09/2025   | 23/09/2025      | <https://explore.skillbuilder.aws/learn>                                                                                                                                                                                                                                   |
+| 3   | - Complete lab and understand EC2 Lab goals: <br> - <strong>Practice:</strong> <br>  + Create Key Pair and Security Group <br>  + Launch an EC2 Instance <br>  + SSH into server and install Web Server <br>  + &hellip;                                                                                                                                                                                                                                                                                                                                                                                                         | 24/09/2025   | 24/09/2025      | <https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1>                                                                                                                                                                                                       |
+| 4   | - Learn Networking Theory (VPC): <br> - Read about VPC architecture: CIDR block, Subnet (Public vs Private). <br> - Learn Internet Gateway (IGW) and Route Table. <br> - Distinguish Security Group (Stateful) vs NACL (Stateless).                                                                                                                                                                                                                                                                                                                                                                                              | 25/09/2025   | 25/09/2025      | <https://docs.aws.amazon.com/vpc/>                                                                                                                                                                                                                                         |
+| 5   | - Do VPC lab to design system network. <br> - Read instructions and prepare steps to create Custom VPC. <br> - <strong>Practice:</strong> <br>  + Create new VPC and divide Subnets <br>  + Attach Internet Gateway and configure Route Table <br>  + &hellip;                                                                                                                                                                                                                                                                                                                                                                   | 26/09/2025   | 26/09/2025      | <https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1>                                                                                                                                                                                                       |
+| 6   | - <strong>Integration Practice:</strong> <br>  + Connect Web Server (EC2) with Database (RDS) created last week <br>  + Configure Security Group to allow port 3306 <br>  + Complete basic 2-Tier architecture                                                                                                                                                                                                                                                                                                                                                                                                                   | 27/09/2025   | 27/09/2025      | <https://us-east-1.console.aws.amazon.com/ec2/v2/home>                                                                                                                                                                                                                     |
 
-### Week 3 Achievements:
+### Week 3 Outcomes:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- Mastered foundational knowledge of Compute (EC2) and Networking (VPC).
+- Completed labs on creating virtual servers and designing VPC networks.
+- Learned how to use Security Groups to secure and control access between resources.
+- Completed integration challenge: Successfully connected Web Server (EC2) and Database (RDS).
+- Successfully built a basic 2-Tier architecture on AWS.
+- ...
