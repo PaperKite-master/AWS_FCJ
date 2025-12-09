@@ -116,7 +116,4 @@ Attending the **“GenAI-powered App-DB Modernization”** workshop was extremel
 - Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
 - AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
 
-#### Some event photos
-*Add your event photos here*  
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
