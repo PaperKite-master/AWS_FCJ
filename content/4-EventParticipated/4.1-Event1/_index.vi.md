@@ -7,7 +7,7 @@ pre: " <b> 4.1. </b> "
 ---
 
 
- # thu hoạch “GenAI-powered App-DB Modernization workshop”
+ # Thu hoạch “GenAI-powered App-DB Modernization workshop”
 
 ### Mục Đích Của Sự Kiện
 
