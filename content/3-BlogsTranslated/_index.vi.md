@@ -6,11 +6,6 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-Tại đây là phần liệt kê, giới thiệu các blogs mà các bạn đã dịch:
 
 ###  [Blog 1 - Đơn giản hóa quản lý lưu trữ đa tài khoản với Amazon EFS và Amazon EKS](3.1-Blog1/)
 Blog này hướng dẫn cách thiết lập gắn kết chéo tài khoản (cross-account mounting) cho hệ thống tệp Amazon EFS trên các cụm Amazon EKS. Các tổ chức ngày càng áp dụng chiến lược đa tài khoản AWS để tăng cường bảo mật, quản trị và hiệu quả vận hành. Với Amazon EFS, bạn có thể chia sẻ tệp tuân thủ POSIX linh hoạt giữa nhiều tài khoản, đồng thời gắn cùng một hệ thống tệp vào nhiều cụm Amazon EKS. Bài viết cung cấp hướng dẫn từng bước để cấu hình VPC peering, route tables, security groups, phân giải DNS Route 53, IAM roles và EFS CSI Driver để cho phép chia sẻ dữ liệu chéo tài khoản an toàn trong khi vẫn duy trì tính cô lập tài khoản.

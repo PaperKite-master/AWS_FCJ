@@ -1,3 +1,10 @@
+---
+title: "Blog 1"
+date: 2025-09-09
+weight: 1
+chapter: false
+pre: " <b> 3.1. </b> "
+---
 # Đơn giản hóa quản lý lưu trữ đa tài khoản với Amazon EFS và Amazon EKS
 
 bởi Samyak Kathane, Raja Pamuluri và Venkat Penmetsa – 01 OCT 2025  

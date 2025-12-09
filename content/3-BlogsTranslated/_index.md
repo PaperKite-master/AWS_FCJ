@@ -6,12 +6,6 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
-This section lists and introduces the blogs you have translated:
-
 ###  [Blog 1 - Simplifying multi-account storage with Amazon EFS and Amazon EKS](3.1-Blog1/)
 This blog guides you through setting up cross-account mounting of Amazon EFS file systems on Amazon EKS clusters. Organizations increasingly adopt multi-account AWS strategies to enhance security, governance, and operational efficiency. With Amazon EFS, you can flexibly share POSIX-compliant files across multiple accounts while mounting the same file system to multiple Amazon EKS clusters. The article provides step-by-step instructions for configuring VPC peering, route tables, security groups, Route 53 DNS resolution, IAM roles, and the EFS CSI Driver to enable secure cross-account data sharing while maintaining account isolation.
 
