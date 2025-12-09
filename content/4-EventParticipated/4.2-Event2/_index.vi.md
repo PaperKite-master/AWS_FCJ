@@ -8,7 +8,7 @@ pre: " <b> 4.2. </b> "
 
 
 
-# Summary Report: “AWS Cloud Day Vietnam 2025 – AI Edition”
+# Bài Thu hoạch: “AWS Cloud Day Vietnam 2025 – AI Edition”
 
 **Chủ đề & thông điệp:** *New Age Vietnam: From Vision to Value* — chuyển **tầm nhìn AI** thành **giá trị đo lường được**.  
 **Trọng tâm:** **Generative AI** và các năng lực **Cloud** đi kèm (dữ liệu, bảo mật, hạ tầng, ứng dụng hiện đại).
