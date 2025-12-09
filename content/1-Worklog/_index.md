@@ -34,4 +34,4 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 11:** [Completing basic project and preparing for submission](1.11-week11/)
 
-**Week 12:** [Reviewing system, preparing demo and presentation materials](1.12-week12/)
+**Week 12:** [Advanced Serverless - CI/CD, Document Management, Amplify, SSL/TLS, and Monitoring](1.12-week12/)

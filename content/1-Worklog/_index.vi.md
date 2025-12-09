@@ -35,4 +35,4 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 11:** [Hoàn thiện dự án cơ bản và chuẩn bị nộp bài](1.11-week11/)
 
-**Tuần 12:** [Review hệ thống, chuẩn bị demo và tài liệu thuyết trình](1.12-week12/)
+**Tuần 12:** [Serverless Nâng cao - CI/CD, Document Management, Amplify, SSL/TLS và Monitoring](1.12-week12/)
